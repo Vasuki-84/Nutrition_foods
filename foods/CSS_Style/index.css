@@ -17,7 +17,36 @@ body {
     grid-template-columns: 3fr;
 
 }
+.list{
+    display: inline-block;
+}
+.list button{
+    color: aquamarine;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+.list a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.list .content{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgb(214, 219, 214);
 
+}
+.list:hover .content{
+    display: block;
+}
+.list:hover button{
+  color: white;
+   
+}
 .showcase2 {
    display: grid;
 
@@ -37,7 +66,6 @@ body {
 }
 
 .list:hover {
-    background-color: bisque;
     width: fit-content;
     cursor: pointer;
 }
@@ -331,22 +359,4 @@ body {
 
 .mailbox {
     border-radius: 10px;
-}
-button {
-    border-width: 5px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    display: flex;
-    justify-items: end;
-    display: inline-block;
-    margin: 8px;
-}
-button:hover{
-    cursor: pointer;
-       color: white;
-    background-color: black;
-    
 }
