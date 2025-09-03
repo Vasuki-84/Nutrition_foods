@@ -17,6 +17,17 @@ body {
     grid-template-columns: 3fr;
 
 }
+ul{
+    list-style: none;
+    display: flex;
+    padding-top: 10px;
+    margin: 5px;
+    justify-content: space-between;
+}
+ul.book{
+    margin-top: 21px;
+  
+}
 .list{
     display: inline-block;
 }
